@@ -12,7 +12,7 @@ Quartus Prime Edition 18.1
 ### 系统状态转移图
 ---
 
-![state-figure](state_figure.png)
+![state-figure](state_figure.PNG)
 
 ---
 ### 用途
