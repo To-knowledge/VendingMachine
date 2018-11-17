@@ -27,4 +27,4 @@ Quartus Prime Edition 18.1
 
 ### 备注
 
-如果需要大作业相应的word文档，联系邮箱：balanceandpositive@163.com
+如果需要大作业相应的word文档，联系邮箱：balancex@aliyun.com
