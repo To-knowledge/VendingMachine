@@ -1,0 +1,131 @@
+|VendingMachine
+clk_i => out_r.CLK
+clk_i => product_type_r[0].CLK
+clk_i => product_type_r[1].CLK
+clk_i => product_type_r[2].CLK
+clk_i => product_type_r[3].CLK
+clk_i => money_buffer_r[0].CLK
+clk_i => money_buffer_r[1].CLK
+clk_i => money_buffer_r[2].CLK
+clk_i => money_buffer_r[3].CLK
+clk_i => money_buffer_r[4].CLK
+clk_i => Next_state~1.DATAIN
+clk_i => Current_state~5.DATAIN
+rst_i => out_r.OUTPUTSELECT
+rst_i => Current_state.OUTPUTSELECT
+rst_i => Current_state.OUTPUTSELECT
+rst_i => Current_state.OUTPUTSELECT
+rst_i => Current_state.OUTPUTSELECT
+product_type_i[0] => product_type_r.DATAB
+product_type_i[0] => Equal1.IN3
+product_type_i[1] => product_type_r.DATAB
+product_type_i[1] => Equal1.IN2
+product_type_i[2] => product_type_r.DATAB
+product_type_i[2] => Equal1.IN1
+product_type_i[3] => product_type_r.DATAB
+product_type_i[3] => Equal1.IN0
+reselected_i => Next_state.OUTPUTSELECT
+reselected_i => Next_state.OUTPUTSELECT
+reselected_i => Next_state.OUTPUTSELECT
+reselected_i => Next_state.OUTPUTSELECT
+reselected_i => money_buffer_r.OUTPUTSELECT
+reselected_i => money_buffer_r.OUTPUTSELECT
+reselected_i => money_buffer_r.OUTPUTSELECT
+reselected_i => money_buffer_r.OUTPUTSELECT
+reselected_i => money_buffer_r.OUTPUTSELECT
+num_twenty_i => num_twenty_i.IN1
+num_ten_i => num_ten_i.IN1
+num_five_i[0] => num_five_i[0].IN1
+num_five_i[1] => num_five_i[1].IN1
+num_one_i[0] => num_one_i[0].IN1
+num_one_i[1] => num_one_i[1].IN1
+num_one_i[2] => num_one_i[2].IN1
+num_one_i[3] => num_one_i[3].IN1
+out_o << out_r.DB_MAX_OUTPUT_PORT_TYPE
+ten_num_o << change:X1.type_ten_o
+five_num_o[0] << change:X1.type_five_o
+five_num_o[1] << change:X1.type_five_o
+one_num_o[0] << change:X1.type_one_o
+one_num_o[1] << change:X1.type_one_o
+one_num_o[2] << change:X1.type_one_o
+Current_state_o[0] << Current_state_o.DB_MAX_OUTPUT_PORT_TYPE
+Current_state_o[1] << Current_state_o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|VendingMachine|price_product:U1
+product_i[0] => Decoder0.IN3
+product_i[1] => Decoder0.IN2
+product_i[2] => Decoder0.IN1
+product_i[3] => Decoder0.IN0
+price_o[0] <= price_r.DB_MAX_OUTPUT_PORT_TYPE
+price_o[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+price_o[2] <= price_r.DB_MAX_OUTPUT_PORT_TYPE
+price_o[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|VendingMachine|putting_money:V1
+num_twenty_i => Add0.IN9
+num_twenty_i => Add0.IN10
+num_ten_i => Decoder0.IN0
+num_five_i[0] => Equal0.IN3
+num_five_i[0] => Equal1.IN3
+num_five_i[1] => Equal0.IN2
+num_five_i[1] => Equal1.IN2
+num_one_i[0] => Add2.IN10
+num_one_i[1] => Add2.IN9
+num_one_i[2] => Add2.IN8
+num_one_i[3] => Add2.IN7
+money_buffer_o[0] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+money_buffer_o[1] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+money_buffer_o[2] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+money_buffer_o[3] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+money_buffer_o[4] <= Add2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|VendingMachine|processing:W1
+money_buffer_i[0] => LessThan0.IN6
+money_buffer_i[1] => LessThan0.IN5
+money_buffer_i[2] => LessThan0.IN4
+money_buffer_i[3] => LessThan0.IN3
+money_buffer_i[4] => LessThan0.IN2
+price_i[0] => LessThan0.IN10
+price_i[1] => LessThan0.IN9
+price_i[2] => LessThan0.IN8
+price_i[3] => LessThan0.IN7
+temp_o <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|VendingMachine|change:X1
+price_i[0] => LessThan0.IN5
+price_i[0] => Add0.IN5
+price_i[1] => LessThan0.IN4
+price_i[1] => Add0.IN4
+price_i[2] => LessThan0.IN3
+price_i[2] => Add0.IN3
+price_i[3] => LessThan0.IN2
+price_i[3] => Add0.IN2
+price_i[4] => LessThan0.IN1
+price_i[4] => Add0.IN1
+money_buffer_i[0] => LessThan0.IN10
+money_buffer_i[0] => Add0.IN10
+money_buffer_i[0] => return_money_i[0].DATAA
+money_buffer_i[1] => LessThan0.IN9
+money_buffer_i[1] => Add0.IN9
+money_buffer_i[1] => return_money_i[1].DATAA
+money_buffer_i[2] => LessThan0.IN8
+money_buffer_i[2] => Add0.IN8
+money_buffer_i[2] => return_money_i[2].DATAA
+money_buffer_i[3] => LessThan0.IN7
+money_buffer_i[3] => Add0.IN7
+money_buffer_i[3] => return_money_i[3].DATAA
+money_buffer_i[4] => LessThan0.IN6
+money_buffer_i[4] => Add0.IN6
+money_buffer_i[4] => return_money_i[4].DATAA
+type_one_o[0] <= type_one_r.DB_MAX_OUTPUT_PORT_TYPE
+type_one_o[1] <= type_one_r.DB_MAX_OUTPUT_PORT_TYPE
+type_one_o[2] <= type_one_r.DB_MAX_OUTPUT_PORT_TYPE
+type_five_o[0] <= type_five_r.DB_MAX_OUTPUT_PORT_TYPE
+type_five_o[1] <= <GND>
+type_ten_o <= type_ten_r.DB_MAX_OUTPUT_PORT_TYPE
+
+

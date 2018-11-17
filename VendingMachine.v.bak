@@ -1,0 +1,58 @@
+module statemach(
+		input clk_i,
+		input  rst_i,
+		input [3:0] product_type_i,
+		input reselected_i,
+		input [3:0] money_type_i,
+		output out_o
+);
+		reg out_r;
+		//output
+		assign out_o = out_r;
+		
+		reg [2:0] Current_state;
+		reg [2:0] Next_state;
+		
+		//define all states
+		parameter [2:0] S0 = 3'b000;
+		parameter [2:0] S1 = 3'b001;
+		parameter [2:0] S2 = 3'b010;
+		parameter [2:0] S3 = 3'b011;
+		parameter [2:0] S4 = 3'b100;
+		parameter [2:0] S5 = 3'b101;
+		//define state tranverse 
+		always@(posedge clk_i)
+		begin
+				if(rst_i)
+					Current_state = S0;
+				else
+					Current_state = Next_state;
+		end
+		//define how to tranverse
+		
+		always@(*)
+		begin
+				case(Current_state)
+					S0:
+							if(product_type_i != 4'b0)
+								Next_state = S1;
+					S1:
+							if(reselected_i == 1'b1)
+								Next_state = S0;
+							else if(money_type_i != 4'b0)
+								Next_state = S2;
+					S2:
+							if(stop_money_i == 1'b1)
+								Next_state = S3;
+							else if(money_type_i != 4'b0)
+								Next_state = S2;
+					
+					S3:
+					
+					S4:
+					
+					S5:
+		end
+		
+
+endmodule

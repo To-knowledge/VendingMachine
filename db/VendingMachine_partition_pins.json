@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_o",
+					"strict" : false
+				},
+				{
+					"name" : "ten_num_o",
+					"strict" : false
+				},
+				{
+					"name" : "five_num_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "one_num_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "one_num_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "one_num_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Current_state_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Current_state_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rst_i",
+					"strict" : false
+				},
+				{
+					"name" : "clk_i",
+					"strict" : false
+				},
+				{
+					"name" : "reselected_i",
+					"strict" : false
+				},
+				{
+					"name" : "product_type_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "product_type_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "product_type_i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "product_type_i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "num_twenty_i",
+					"strict" : false
+				},
+				{
+					"name" : "num_five_i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "num_five_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "num_ten_i",
+					"strict" : false
+				},
+				{
+					"name" : "num_one_i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "num_one_i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "num_one_i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "num_one_i[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

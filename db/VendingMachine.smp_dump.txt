@@ -1,0 +1,14 @@
+
+State Machine - |VendingMachine|Next_state
+Name Next_state.S3 Next_state.S2 Next_state.S1 Next_state.S0 
+Next_state.S0 0 0 0 0 
+Next_state.S1 0 0 1 1 
+Next_state.S2 0 1 0 1 
+Next_state.S3 1 0 0 1 
+
+State Machine - |VendingMachine|Current_state
+Name Current_state.S3 Current_state.S2 Current_state.S1 Current_state.S0 
+Current_state.S0 0 0 0 0 
+Current_state.S1 0 0 1 1 
+Current_state.S2 0 1 0 1 
+Current_state.S3 1 0 0 1 

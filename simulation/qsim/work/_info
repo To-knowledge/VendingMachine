@@ -1,0 +1,222 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/VendingMachine2.0/simulation/qsim
+vchange
+Z1 !s110 1542438304
+!i10b 1
+!s100 =ROb]6a0U5jci0jHa=95^2
+I?:G1PG[:m;]k12aB5@j?[2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1542438303
+Z3 8VendingMachine.vo
+Z4 FVendingMachine.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1542438304.000000
+Z8 !s107 VendingMachine.vo|
+Z9 !s90 -work|work|VendingMachine.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vchange_vlg_vec_tst
+R1
+!i10b 1
+!s100 ^dOoY@GB9I?;G7LMVhTan2
+IZVmzMYi@K?I?jB9Wh_l:?2
+R2
+R0
+w1542438301
+Z12 8product_price_sim.vwf.vt
+Z13 Fproduct_price_sim.vwf.vt
+Z14 L0 29
+R6
+r1
+!s85 0
+31
+R7
+Z15 !s107 product_price_sim.vwf.vt|
+Z16 !s90 -work|work|product_price_sim.vwf.vt|
+!i113 1
+R10
+R11
+vprice_product
+Z17 !s110 1542438374
+!i10b 1
+!s100 ;KZN1b7J^_YOH=@RYhfE21
+I`<BX81?j70I<alFK2QSnX1
+R2
+R0
+w1542438373
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z18 !s108 1542438374.000000
+R8
+R9
+!i113 1
+R10
+R11
+vprice_product_vlg_vec_tst
+R17
+!i10b 1
+!s100 ISPiMM3<;I:<cieHHTBGQ1
+I>SKm;O?S4<o[3CH72DMG;3
+R2
+R0
+w1542438371
+R12
+R13
+R14
+R6
+r1
+!s85 0
+31
+R18
+R15
+R16
+!i113 1
+R10
+R11
+vprocessing
+Z19 !s110 1542438629
+!i10b 1
+!s100 <bX^bk^LRP_H3B4MKaAO;3
+IRJM:OWJOj5NFN>Cz1PAn53
+R2
+R0
+w1542438628
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1542438629.000000
+R8
+R9
+!i113 1
+R10
+R11
+vprocessing_vlg_vec_tst
+R19
+!i10b 1
+!s100 K572=k5b=;]N[UoTNcV?50
+ILEn`jM10f1;@l70=L0Lom3
+R2
+R0
+w1542438626
+8processing_sim.vwf.vt
+Fprocessing_sim.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R20
+!s107 processing_sim.vwf.vt|
+!s90 -work|work|processing_sim.vwf.vt|
+!i113 1
+R10
+R11
+vputting_money
+Z21 !s110 1542438477
+!i10b 1
+!s100 1GUdnZcV6hRzNJIkZRfza1
+IGW1;eB4nQ?f<odD_^RKVi3
+R2
+R0
+w1542438476
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z22 !s108 1542438477.000000
+R8
+R9
+!i113 1
+R10
+R11
+vputting_money_vlg_vec_tst
+R21
+!i10b 1
+!s100 zDddN;m]JB`654U;aA1ma0
+Ik4@OdjMAR^meDbeZD@DK?2
+R2
+R0
+w1542438474
+8putting_money_sim.vwf.vt
+Fputting_money_sim.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R22
+!s107 putting_money_sim.vwf.vt|
+!s90 -work|work|putting_money_sim.vwf.vt|
+!i113 1
+R10
+R11
+vVendingMachine
+Z23 !s110 1542438780
+!i10b 1
+!s100 IZg2Ca>W3TYFnTHzlj?Q70
+IOI7d35C?jciWgdT]i?7WS1
+R2
+R0
+w1542438779
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z24 !s108 1542438780.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@vending@machine
+vVendingMachine_vlg_vec_tst
+R23
+!i10b 1
+!s100 Tj`:fASUeT2@z2I<jK6OP3
+I@@bQG15:G?1HEdk6U>J[z2
+R2
+R0
+w1542438777
+8sec_test.vwf.vt
+Fsec_test.vwf.vt
+R14
+R6
+r1
+!s85 0
+31
+R24
+!s107 sec_test.vwf.vt|
+!s90 -work|work|sec_test.vwf.vt|
+!i113 1
+R10
+R11
+n@vending@machine_vlg_vec_tst
