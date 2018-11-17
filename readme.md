@@ -12,9 +12,9 @@ Quartus Prime Edition 18.1
 ![state-figure](state_figure.PNG)
 
 ---
-#### 仿真测试图
+### 仿真测试图
 
-！[simulation_test](sys_sim_1.png)
+![simulation_test](sys_sim_1.png)
 
 ---
 
